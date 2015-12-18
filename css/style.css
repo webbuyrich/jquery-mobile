@@ -6,7 +6,7 @@
 
 
 /***** LOGO */
-.logo h1{width: 100%; text-align: center; margin: 0 auto; font-weight: normal}
+#header h1{width: 100%; text-align: center; margin: 0 auto; font-weight: normal}
 
 /******* ELEMENTS */
 p, h1 {color:#fff; font-weight: normal;}
