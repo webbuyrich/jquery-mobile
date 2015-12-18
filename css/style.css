@@ -1,1 +1,3 @@
-#logo-home{width:225px!important;}
+#home .ui-controlgrup{width:60%; margin:0auto; max-width: 200px;}
+#home img{display:block; margin: 0 auto; width:75%; max-width: 250px;}
+.logo h1{width: 100%; text-align: center; margin: 0 auto; color:#005AFF;}
