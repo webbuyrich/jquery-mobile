@@ -1,4 +1,4 @@
-/***** HOME PAGE */
+	/***** HOME PAGE */
 
 #home .ui-controlgrup{width:60%; margin:0auto; max-width: 200px;}
 #home img{display:block; margin: 0 auto; width:75%; max-width: 250px;}
@@ -9,4 +9,4 @@
 #header h1{width: 100%; text-align: center; margin: 0 auto; font-weight: normal}
 
 /******* ELEMENTS */
-p, h1 {color:#fff; font-weight: normal;}
+.home-header, .home-content{color:#fff; font-weight: normal;}

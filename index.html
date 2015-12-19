@@ -18,61 +18,86 @@
     </head>
     <body>
 
+
+        <!-- Page: Home Section -->
         <section data-role="page" id="home">
-            
-            <header data-theme="b" data-role="header" id="header">
-                <h1>VIEW SOURCE</h1>
-                <a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-home">Home</a>
-                <a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-info">Info</a>
-             </header><!-- header -->
-            
+                      
             <article data-role="content">
                 <div class="logo">
                     <img src="css/images/logo_home.png"  id="logo-home" alt="">
                    
                 </div>                
                 <div data-role="controlgroup">
-                    <a href="#" class="ui-btn ui-corner-all ui-btn-b ui-icon-bars ui-btn-icon-left">Blog</a>
+                    <a href="#users" class="ui-btn ui-corner-all ui-btn-b ui-icon-bars ui-btn-icon-left">Users</a>
                     <a href="#" class="ui-btn ui-corner-all ui-btn-b ui-icon-video ui-btn-icon-left">Videos</a>
                     <a href="#" class="ui-btn ui-corner-all ui-btn-b ui-icon-camera ui-btn-icon-left">Photos</a>
                     <a href="#" class="ui-btn ui-corner-all ui-btn-b ui-icon-cloud ui-btn-icon-left">Sources</a>
                 </div>                
-                <h1>Welcome</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia assumenda aperiam, consequuntur, quia at optio accusamus quidem voluptatem explicabo minus. Enim rerum cumque quasi deserunt reprehenderit veritatis ad animi tempore!</p>
+                <h1 class="home-header">Welcome</h1>
+                <p class="home-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia assumenda aperiam, consequuntur, quia at optio accusamus quidem voluptatem explicabo minus. Enim rerum cumque quasi deserunt reprehenderit veritatis ad animi tempore!</p>
                 
+            </article><!-- content -->       
+            
+        
+        </section>  <!-- Home Section -->
+
+        <!-- Page: Users Section -->
+        <section data-role="page" data-title="User" id="users">
+            
+            <header data-theme="b" data-role="header" id="header">
+                <h1>USER LIST</h1>
+                <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-home">Home</a>
+                <a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-info">Info</a>
+             </header><!-- header -->
+            
+            <article data-role="content" id="userlist">
+                    <h1 class="page-header">Welcome</h1>
+                    <p class="page-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia assumenda aperiam, consequuntur, quia at optio accusamus quidem voluptatem explicabo minus. Enim rerum cumque quasi deserunt reprehenderit veritatis ad animi tempore!</p>
+                    
             </article><!-- content -->
             
             <footer data-theme="b" data-role="footer" data-position="fixed" id="footer">
                 <nav data-role="navbar" class="">
                     <ul>
-                        <li><a href="#" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
-                        <li><a href="#" class="ui-btn ui-icon-edit ui-btn-icon-top">Blog</a></li>
+                        <li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+                        <li><a href="#users" class="ui-btn ui-icon-edit ui-btn-icon-top">Users</a></li>
                         <li><a href="#" class="ui-btn ui-icon-video ui-btn-icon-top">Video</a></li>
                         <li><a href="#" class="ui-btn ui-icon-camera ui-btn-icon-top">Photos</a></li>
                         <li><a href="#" class="ui-btn ui-icon-comment ui-btn-icon-top">Tweets</a></li>
                     </ul>
                 </nav>
-            </footer><!-- header -->
+            </footer><!-- footer -->
         
-        </section>  <!-- Home Section -->
+        </section>  <!-- Users Section -->
 
-        <section data-role="page" id="info">
+        <!-- Page: Users Information Section -->
+         <section data-role="page" data-title="User Info" id="users-info">
             
-            <div data-role="header">
-                header
-            </div><!-- header -->
+            <header data-theme="b" data-role="header" id="header">
+                <h1>USER LIST</h1>
+                <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-home">Home</a>
+                <a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-info">Info</a>
+             </header><!-- header -->
             
-            <article data-role="content">
-                    <h1>Welcome</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia assumenda aperiam, consequuntur, quia at optio accusamus quidem voluptatem explicabo minus. Enim rerum cumque quasi deserunt reprehenderit veritatis ad animi tempore!</p>
-                    <a href="#home">Home</a>
+            <article data-role="content" id="user-info-list">
+                    <h1 class="page-header">Welcome</h1>
+                    <p class="page-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia assumenda aperiam, consequuntur, quia at optio accusamus quidem voluptatem explicabo minus. Enim rerum cumque quasi deserunt reprehenderit veritatis ad animi tempore!</p>
+                    
             </article><!-- content -->
             
-            <div data-role="footer">
-                footer
-            </div><!-- footer -->
+            <footer data-theme="b" data-role="footer" data-position="fixed" id="footer">
+                <nav data-role="navbar" class="">
+                    <ul>
+                        <li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+                        <li><a href="#users" class="ui-btn ui-icon-edit ui-btn-icon-top">Users</a></li>
+                        <li><a href="#" class="ui-btn ui-icon-video ui-btn-icon-top">Video</a></li>
+                        <li><a href="#" class="ui-btn ui-icon-camera ui-btn-icon-top">Photos</a></li>
+                        <li><a href="#" class="ui-btn ui-icon-comment ui-btn-icon-top">Tweets</a></li>
+                    </ul>
+                </nav>
+            </footer><!-- footer -->
         
-        </section>  <!-- Home Section -->
+        </section>  <!-- Users Information Section -->
 
         </div>
         <h1>JQuery Mobile</h1>
@@ -80,4 +105,5 @@
         
     </body>
     <script src="js/script.js"></script>
+
 </html>
