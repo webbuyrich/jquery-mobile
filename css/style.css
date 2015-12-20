@@ -10,3 +10,5 @@
 
 /******* ELEMENTS */
 .home-header, .home-content{color:#fff; font-weight: normal;}
+
+.user-list a{text-decoration: none!important; text-transform: capitalize;}
