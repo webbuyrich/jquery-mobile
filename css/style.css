@@ -12,3 +12,5 @@
 .home-header, .home-content{color:#fff; font-weight: normal;}
 
 .user-list a{text-decoration: none!important; text-transform: capitalize;}
+.user-list-text-padding{padding-left: 10px!important;}
+.username-capitalize{text-transform:capitalize;}
