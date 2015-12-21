@@ -41,12 +41,9 @@ $(document).ready(function (){
 			$.each(userData.results, function(i, user){
 				
 				if(user.user.username === newdata){
-					var output = '<img src="'+user.user.picture.medium+'">';
-					console.log(output);
+					var output = '<img src="'+user.user.picture.large+'">';
 					$('#user-profile').html(output);
-				} else{
-					console.log('There was an error');
-				}		
+				} 	
 				
 			});	
 		});
