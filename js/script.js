@@ -41,7 +41,7 @@ $(document).ready(function (){
 			$.each(userData.results, function(i, user){
 				
 				if(user.user.username === newdata){
-					var output = '<img src="'+user.user.picture.large+'">';
+					var output = '<img src="'+user.user.picture.medium+'">';
 					$('#user-profile').html(output);
 				} 	
 				
