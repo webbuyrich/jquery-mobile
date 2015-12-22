@@ -110,7 +110,7 @@ $('.link-videos').click(function(){
 				
 				if(videoID === newVideoID){
 					
-					output = '<iframe src=\"http://www.youtube.com/embed/'+newVideoID+'"></iframe>';
+					output = '<iframe src=\"http://www.youtube.com/embed/'+newVideoID+'" height="315"></iframe>';
 
 					$('#popupVideo').html(output);
 

@@ -2,14 +2,19 @@
 
 #home .ui-controlgrup{width:60%; margin:0auto; max-width: 200px;}
 #home img{display:block; margin: 0 auto; width:75%; max-width: 250px;}
-#home{background: url('../css/images/background.png');}
+#home{background: #252525;}
+#home header{text-align:center;}
+.home-content{width: auto;}
+ul{list-style-type: none!important;}
+.home-list{color: #27ae60!important;font-weight: 300; text-shadow:none;}
+
 
 
 /***** LOGO */
 #header h1{width: 100%; text-align: center; margin: 0 auto; font-weight: normal}
 
 /******* ELEMENTS */
-.home-header, .home-content{color:#fff; font-weight: normal;}
+.home-header, .home-content{color:#fff; font-weight: 300; text-align: center;}
 
 .user-list a{text-decoration: none!important; text-transform: capitalize;}
 .user-list-text-padding{padding-left: 10px!important;}
