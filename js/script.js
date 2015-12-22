@@ -41,7 +41,15 @@ $(document).ready(function (){
 			$.each(userData.results, function(i, user){
 				
 				if(user.user.username === newdata){
-					var output = '<img src="'+user.user.picture.medium+'">';
+
+					var output = '<div class="ui-body ui-body-a ui-corner-all"><h3 class="ui-bar ui-bar-a username-capitalize">'+user.user.name.first+ ' ' +user.user.name.last+'</h3>'; 
+					output+='<img src="'+user.user.picture.medium+'">';
+					output+='<p>';
+					output+= user.user.username+'<br />';
+					output+= user.user.email+'<br />';
+					output+= user.user.cell+'<br />';
+					output+='</p>';
+					output+='</div>';
 					$('#user-profile').html(output);
 				} 	
 				
