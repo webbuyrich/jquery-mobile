@@ -29,6 +29,16 @@ $(document).on("pageshow","#videos", function(){
 		}
 	});
 
+	$.get(
+		"https://www.googleapis.com/youtube/v3/playlistItems",{
+		part: 'snippet',
+		maxResults: 10,
+		playlistId: 'UU4n11G8TYcmJgSj7jjZRWKA',
+		key: 'AIzaSyAFmeWlGCaTkMx5ntJjc2FvlFEzuv2YvXQ'},
+			function(data){
+				videoData = data;
+			}
+	);
 
 
 	$('.link-users').click(function(){
@@ -64,7 +74,7 @@ $(document).on("pageshow","#videos", function(){
 					output+='</p>';
 					output+='<button  onclick="history.back();" class="ui-btn ui-shadow ui-icon-back ui-btn-icon-left">Go Back</button>'
 					output+='</div>';
-					$('#user-profile').html(output);
+					$('#user-profile').append(output);
 				}
 
 			});
@@ -74,37 +84,46 @@ $(document).on("pageshow","#videos", function(){
 
 $('.link-videos').click(function(){
 
-	getVideos();
+		
+
+		$.each(videoData.items, function(i, item){
+			
+			videoTitle = item.snippet.title;
+			videoThumbnail = item.snippet.thumbnails.default.url;
+			videoID = item.snippet.resourceId.videoId;
+
+			var output ='<li class="ui-grid-a popupVideo" data-videoid="'+videoID+'"><a href="#popupVideo" data-rel="popup" data-position-to="window" class="ui-btn ui-btn-icon-right ui-icon-carat-r">';
+				output+='<div class="ui-block-b user-list-text-padding"><p>'+videoTitle+'</p></div>';
+				output+='</a>';
+				output+='</li>';
+				$('#video-list').append(output);
+		})
 
 
-});
+		$('.popupVideo').click(function(){
+			
+			var newVideoID = $(this).data('videoid');
+			
+			$.each(videoData.items, function(i, item){
 
-function getVideos(){
+				videoID = item.snippet.resourceId.videoId;
+				
+				if(videoID === newVideoID){
+					
+					output = '<iframe src=\"http://www.youtube.com/embed/'+newVideoID+'"></iframe>';
 
-	$.get(
-		"https://www.googleapis.com/youtube/v3/playlistItems",{
-		part: 'snippet',
-		maxResults: 10,
-		playlistId: 'UUDVYQ4Zhbm3S2dlz7P1GBDg',
-		key: 'AIzaSyAFmeWlGCaTkMx5ntJjc2FvlFEzuv2YvXQ'},
-			function(data){
-				$.each(data.items, function(i, item){
-					console.log(item);
-					videoTitle = item.snippet.title;
-					videoThumbnail = item.snippet.thumbnails.default.url;
+					$('#popupVideo').html(output);
 
-					var output ='<li class="videoplayer" data-videotitle="'+videoTitle+'"><a href="#videoplayer" class="ui-btn ui-btn-icon-right ui-icon-carat-r">';
-						output+='<div><p>'+videoTitle+'</p></div>';
-						output+='</a>';
-						output+='</li>';
-						$('#video-list').append(output);
-				})
-			}
-	)
+				}
+
+			});
+
+		});
 
 	
 
-}
+});
+
 
 
 
