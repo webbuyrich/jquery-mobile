@@ -49,6 +49,7 @@ $(document).ready(function (){
 					output+= user.user.email+'<br />';
 					output+= user.user.cell+'<br />';
 					output+='</p>';
+					output+='<button  onclick="history.back();" class="ui-btn ui-shadow ui-icon-back ui-btn-icon-left">Go Back</button>'
 					output+='</div>';
 					$('#user-profile').html(output);
 				} 	
