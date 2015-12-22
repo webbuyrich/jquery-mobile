@@ -13,7 +13,7 @@
         <!-- STYLESHEETS --> 
         <link rel="stylesheet" href="css/jquerymobile.css">       
         <link rel="stylesheet" href="css/style.css">
-       
+       <script src="https://apis.google.com/js/client.js?onload=init"></script>
 
     </head>
     <body>
@@ -29,7 +29,7 @@
                 </div>                
                 <div data-role="controlgroup">
                     <a href="#users" class="ui-btn ui-corner-all ui-btn-b ui-icon-bars ui-btn-icon-left link-users">Users</a>
-                    <a href="#"  class="ui-btn ui-corner-all ui-btn-b ui-icon-video ui-btn-icon-left link-videos">Videos</a>
+                    <a href="#videos"  class="ui-btn ui-corner-all ui-btn-b ui-icon-video ui-btn-icon-left link-videos">Videos</a>
                     <a href="#"  class="ui-btn ui-corner-all ui-btn-b ui-icon-camera ui-btn-icon-left link-photos">Photos</a>
                     <a href="#"  class="ui-btn ui-corner-all ui-btn-b ui-icon-cloud ui-btn-icon-left link-sources">Sources</a>
                 </div>                
@@ -57,7 +57,7 @@
                     <ul>
                         <li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top link-home">Home</a></li>
                         <li><a href="#users" class="ui-btn ui-icon-edit ui-btn-icon-top link-users">Users</a></li>
-                        <li><a href="#" class="ui-btn ui-icon-video ui-btn-icon-top link-videos">Video</a></li>
+                        <li><a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-top link-videos">Video</a></li>
                         <li><a href="#"  class="ui-btn ui-icon-camera ui-btn-icon-top link-photos">Photos</a></li>
                         <li><a href="#"  class="ui-btn ui-icon-comment ui-btn-icon-top link-tweets">Tweets</a></li>
                     </ul>
@@ -80,7 +80,7 @@
                     <ul>
                         <li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top link-home">Home</a></li>
                         <li><a href="#users" class="ui-btn ui-icon-edit ui-btn-icon-top link-users">Users</a></li>
-                        <li><a href="#" class="ui-btn ui-icon-video ui-btn-icon-top link-videos">Video</a></li>
+                        <li><a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-top link-videos">Video</a></li>
                         <li><a href="#"  class="ui-btn ui-icon-camera ui-btn-icon-top link-photos">Photos</a></li>
                         <li><a href="#"  class="ui-btn ui-icon-comment ui-btn-icon-top link-tweets">Tweets</a></li>
                     </ul>
@@ -89,7 +89,36 @@
         
         </section>  <!-- Users Profile Section -->
 
+         <!-- Page: Videos Section -->
+         <section data-role="page" class="header-default" data-title="Videos" id="videos">            
+            <header data-theme="b" data-role="header" class="profile-header-default">
+            
+            </header> 
+            <article data-role="content" >
+              <div class="ui-grid-a" id="video-list"><ul id="results"></ul></div>                         
+            </article><!-- content -->
+            
+            <footer data-theme="b" data-role="footer" data-position="fixed" class="footer">
+                <nav data-role="navbar" class="">
+                    <ul>
+                        <li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top link-home">Home</a></li>
+                        <li><a href="#users" class="ui-btn ui-icon-edit ui-btn-icon-top link-users">Users</a></li>
+                        <li><a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-top link-videos">Video</a></li>
+                        <li><a href="#"  class="ui-btn ui-icon-camera ui-btn-icon-top link-photos">Photos</a></li>
+                        <li><a href="#"  class="ui-btn ui-icon-comment ui-btn-icon-top link-tweets">Tweets</a></li>
+                    </ul>
+                </nav>
+            </footer><!-- footer -->
+        
+        </section>  <!-- Videos Section -->
+
+
+       <!-- Video Player Section --> 
+       <section id="videoplayer" class="header-default footer-default" data-role="page" data-title="videoplayer">
+        <div data-role="content">
+            <div class="myplayer"></div>
         </div>
+       </section>
         
         
     </body>
