@@ -93,9 +93,8 @@ function getVideos(){
 					videoTitle = item.snippet.title;
 					videoThumbnail = item.snippet.thumbnails.default.url;
 
-					var output ='<li class="ui-grid-a videoplayer" data-videotitle="'+videoTitle+'"><a href="#videoplayer" class="ui-btn ui-btn-icon-right ui-icon-carat-r">';
-						output+='<div class="ui-block-a"><img src="'+videoThumbnail+'"></div>';
-						output+='<div class="ui-block-b user-list-text-padding"><p>'+videoTitle+'</p></div>';
+					var output ='<li class="videoplayer" data-videotitle="'+videoTitle+'"><a href="#videoplayer" class="ui-btn ui-btn-icon-right ui-icon-carat-r">';
+						output+='<div><p>'+videoTitle+'</p></div>';
 						output+='</a>';
 						output+='</li>';
 						$('#video-list').append(output);
