@@ -94,9 +94,9 @@
             <header data-theme="b" data-role="header" class="profile-header-default">
             
             </header> 
-            <article data-role="content" >
-              <div class="ui-grid-a" id="video-list"><ul id="results"></ul></div>                         
-            </article><!-- content -->
+            <ul data-role="listview" data-inset="true" id="video-list">
+                
+            </ul>
             
             <footer data-theme="b" data-role="footer" data-position="fixed" class="footer">
                 <nav data-role="navbar" class="">
@@ -115,9 +115,23 @@
 
        <!-- Video Player Section --> 
        <section id="videoplayer" class="header-default footer-default" data-role="page" data-title="videoplayer">
+        <header data-theme="b" data-role="header" class="profile-header-default">
+        
+        </header> 
         <div data-role="content">
             <div class="myplayer"></div>
         </div>
+        <footer data-theme="b" data-role="footer" data-position="fixed" class="footer">
+            <nav data-role="navbar" class="">
+                <ul>
+                    <li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top link-home">Home</a></li>
+                    <li><a href="#users" class="ui-btn ui-icon-edit ui-btn-icon-top link-users">Users</a></li>
+                    <li><a href="#videos" class="ui-btn ui-icon-video ui-btn-icon-top link-videos">Video</a></li>
+                    <li><a href="#"  class="ui-btn ui-icon-camera ui-btn-icon-top link-photos">Photos</a></li>
+                    <li><a href="#"  class="ui-btn ui-icon-comment ui-btn-icon-top link-tweets">Tweets</a></li>
+                </ul>
+            </nav>
+        </footer><!-- footer -->
        </section>
         
         
