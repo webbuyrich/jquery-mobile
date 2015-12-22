@@ -5,6 +5,20 @@ $(document).ready(function (){
 		console.log(data);
 	});
 	*/
+	
+$(document).on("pageshow","#users", function(){
+	 $(':jqmData(role="header")').html('<h1 class="ui-title" role="heading" aria-level="1">USERS</h1><a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-home">Home</a><a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-info">Info</a>'); 
+
+});
+$(document).on("pageshow","#profile", function(){
+	 $(':jqmData(role="header")').html('<h1 class="ui-title" role="heading" aria-level="1">PROFILE</h1><a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-home">Home</a><a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-notext ui-icon-info">Info</a>'); 
+
+});
+
+
+	
+
+
 
 	var userData;
 
@@ -16,7 +30,7 @@ $(document).ready(function (){
 		}
 	});
 
-
+	
 
 	$('.link-users').click(function(){
 		$.each(userData.results, function(i, user){
